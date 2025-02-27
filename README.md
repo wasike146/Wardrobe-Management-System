@@ -61,6 +61,7 @@ The Wardrobe Management System is a web application built with Vue 3 (frontend) 
    npm run dev
    ```
 
-![Frontend Screenshot](images/login_register.png)
-![Frontend Screenshot](images/login_page.png)
-![Frontend Screenshot](images/register_page.png)
+![Login Page](wardrobe-frontend/src/assets/images/login_page.png)
+![Register Page](wardrobe-frontend/src/assets/images/login_register.png)
+![Registration Page](wardrobe-frontend/src/assets/images/registrar_page.png)
+

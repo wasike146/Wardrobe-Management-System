@@ -1,33 +1,77 @@
-# wardrobe-frontend
+# Wardrobe Management System
 
-This template should help get you started developing with Vue 3 in Vite.
+The Wardrobe Management System is a web application built with Vue 3 (frontend) and Laravel 11 (backend). It allows users to manage their clothing items, categorize them, and filter/search through their wardrobe. The system also includes user authentication (login/registration) and a responsive, user-friendly interface.
 
-## Recommended IDE Setup
+![Wardrobe Management System](images/wardrobe_system.png)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Features
 
-## Type Support for `.vue` Imports in TS
+### User Authentication:
+- Login and registration functionality.
+- Token-based authentication using Laravel Sanctum.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+### Clothing Item Management:
+- Add, edit, and delete clothing items.
+- Categorize items (e.g., tops, bottoms, shoes).
 
-## Customize configuration
+### Filter and Search:
+- Filter clothing items by category.
+- Search for specific items by name or description.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Setup Instructions
 
-## Project Setup
+### Backend
 
-```sh
-npm install
-```
+1. Navigate to the backend directory:
+   ```sh
+   cd backend
+   ```
 
-### Compile and Hot-Reload for Development
+2. Install the dependencies:
+   ```sh
+   composer install
+   ```
 
-```sh
-npm run dev
-```
+3. Copy the environment file and generate the application key:
+   ```sh
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-### Type-Check, Compile and Minify for Production
+4. Set up your database in the `.env` file.
 
-```sh
-npm run build
-```
+5. Run the database migrations:
+   ```sh
+   php artisan migrate
+   ```
+
+6. Start the Laravel development server:
+   ```sh
+   php artisan serve
+   ```
+
+### Frontend
+
+1. Navigate to the frontend directory:
+   ```sh
+   cd frontend
+   ```
+
+2. Install the dependencies:
+   ```sh
+   npm install
+   ```
+
+3. Start the Vue development server:
+   ```sh
+   npm run serve
+   ```
+
+## Usage
+
+- Open your browser and navigate to [http://localhost:8080](http://localhost:8080) for the frontend.
+- Use [http://localhost:8000](http://localhost:8000) for the backend API.
+
+![Frontend Screenshot](images/login_register.png)
+![Frontend Screenshot](images/login_page.png)
+![Frontend Screenshot](images/register_page.png)

@@ -32,20 +32,14 @@ The Wardrobe Management System is a web application built with Vue 3 (frontend) 
    composer install
    ```
 
-3. Copy the environment file and generate the application key:
-   ```sh
-   cp .env.example .env
-   php artisan key:generate
-   ```
+3. Set up your database in the `.env` file.
 
-4. Set up your database in the `.env` file.
-
-5. Run the database migrations:
+4. Run the database migrations:
    ```sh
    php artisan migrate
    ```
 
-6. Start the Laravel development server:
+5. Start the Laravel development server:
    ```sh
    php artisan serve
    ```
@@ -54,7 +48,7 @@ The Wardrobe Management System is a web application built with Vue 3 (frontend) 
 
 1. Navigate to the frontend directory:
    ```sh
-   cd frontend
+   cd wardrobe-frontend
    ```
 
 2. Install the dependencies:
@@ -64,13 +58,8 @@ The Wardrobe Management System is a web application built with Vue 3 (frontend) 
 
 3. Start the Vue development server:
    ```sh
-   npm run serve
+   npm run dev
    ```
-
-## Usage
-
-- Open your browser and navigate to [http://localhost:8080](http://localhost:8080) for the frontend.
-- Use [http://localhost:8000](http://localhost:8000) for the backend API.
 
 ![Frontend Screenshot](images/login_register.png)
 ![Frontend Screenshot](images/login_page.png)

@@ -2,8 +2,6 @@
 
 The Wardrobe Management System is a web application built with Vue 3 (frontend) and Laravel 11 (backend). It allows users to manage their clothing items, categorize them, and filter/search through their wardrobe. The system also includes user authentication (login/registration) and a responsive, user-friendly interface.
 
-![Wardrobe Management System](images/wardrobe_system.png)
-
 ## Features
 
 ### User Authentication:
